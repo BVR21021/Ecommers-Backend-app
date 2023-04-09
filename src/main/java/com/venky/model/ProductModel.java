@@ -30,7 +30,7 @@ public class ProductModel {
 	@Column(name = "product_desc", nullable = false)
 	private String product_desc;
 
-	@ManyToAny(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.EAGER)
 	private Category category;
 
 	public ProductModel() {
